@@ -26,21 +26,47 @@ class OnboardingPageview extends GetView<OnBoardingControllerImp> {
           Text(onboardingModel[index].titel,
               style: Theme.of(context).textTheme.headlineLarge),
           SizedBox(
-            height: MediaQuery.of(context).size.height * 0.1,
+            height: MediaQuery.of(context).size.height * 0.04,
           ),
           Image(
             image: AssetImage(onboardingModel[index].image),
-            height: 200,
-            width: 200,
+            // height: 200,
+            // width: 200,
             fit: BoxFit.fill,
           ),
           SizedBox(
-            height: MediaQuery.of(context).size.height * 0.1,
+            height: MediaQuery.of(context).size.height * 0.04,
           ),
-          Text(
-            onboardingModel[index].textBody,
-            style: Theme.of(context).textTheme.bodySmall,
-            textAlign: TextAlign.center,
+          Padding(
+            padding: const EdgeInsets.only(left: 40),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      onboardingModel[index].headBody,
+                      style: Theme.of(context).textTheme.headlineMedium,
+                      textAlign: TextAlign.start,
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.04,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      onboardingModel[index].textBody,
+                      style: Theme.of(context).textTheme.bodySmall,
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ],
       ),

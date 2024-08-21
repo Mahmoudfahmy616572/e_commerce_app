@@ -4,22 +4,19 @@ import 'package:e_commerce_app/data/models/onboarding_model.dart';
 List<OnboardingModel> onboardingModel = [
   OnboardingModel(
       image: AppImageAssets.onboardingImageOne,
-      textBody:
-          "We Have a 100k Product , Choose \n Your Product From  Our \n E-commerce Shop",
+      headBody: "Set the Product \n Readmap",
+      textBody: "Easily adjust the product roadmap to \n simplify your work",
       titel: "Choose Product"),
   OnboardingModel(
       image: AppImageAssets.onboardingImageTwo,
       textBody:
-          "We Have a 100k Product , Choose \n Your Product From  Our \n E-commerce Shop",
-      titel: "Easy And Safe Paymnet"),
+          "Build your company's product development \n to get better easily",
+      titel: "Easy And Safe Paymnet",
+      headBody: 'Building Product \n Development'),
   OnboardingModel(
       image: AppImageAssets.onboardingImageThree,
       textBody:
-          "We Have a 100k Product , Choose \n Your Product From Our E-commerce Shop",
-      titel: "Track Your Order"),
-  OnboardingModel(
-      image: AppImageAssets.onboardingImagefour,
-      textBody:
-          "We Have a 100k Product , Choose \n Your Product From Our E-commerce Shop",
-      titel: "Fast Delivery"),
+          "After the company's product development\n is complete and ready to launch",
+      titel: "Track Your Order",
+      headBody: 'Product Lunch'),
 ];

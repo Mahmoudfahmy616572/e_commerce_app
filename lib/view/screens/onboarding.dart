@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../widgets/onboarding/onboarding_button.dart';
 import '../widgets/onboarding/onboarding_controller_widget.dart';
 import '../widgets/onboarding/onboarding_page_view.dart';
-import '../widgets/onboarding/onboarding_text_button.dart';
 
 class Onboarding extends StatelessWidget {
   const Onboarding({super.key});
@@ -15,22 +14,18 @@ class Onboarding extends StatelessWidget {
           child: Column(
         children: [
           const Expanded(
-            flex: 2,
+            flex: 5,
             child: OnboardingPageview(),
           ),
           Expanded(
-            flex: 1,
+            flex: 2,
             child: Column(
               children: [
                 const OnboardingController(),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.15,
                 ),
-                const OnboardingButton(),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.015,
-                ),
-                const OnboardingTextButton()
+                const OnboardingButton()
               ],
             ),
           )

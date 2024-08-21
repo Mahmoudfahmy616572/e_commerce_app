@@ -20,6 +20,7 @@ class OnBoardingControllerImp extends OnboardingController {
     }
     pageController.animateToPage(currentPage,
         duration: const Duration(milliseconds: 700), curve: Curves.easeInOut);
+    update();
   }
 
   @override

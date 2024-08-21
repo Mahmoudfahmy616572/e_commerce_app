@@ -22,11 +22,15 @@ class MyApp extends StatelessWidget {
           fontFamily: "PlayfairDisplay",
           textTheme: TextTheme(
             headlineLarge: TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                color: AppColors.black),
+            headlineMedium: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: AppColors.black),
             bodySmall:
-                TextStyle(fontSize: 20, color: AppColors.grey, height: 1.5),
+                TextStyle(fontSize: 17, color: AppColors.grey, height: 1.5),
           ),
           primarySwatch: Colors.blue),
       home: const Onboarding(),
