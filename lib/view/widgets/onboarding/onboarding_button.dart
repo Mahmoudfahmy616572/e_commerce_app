@@ -27,9 +27,9 @@ class OnboardingButton extends StatelessWidget {
               onPressed: () {
                 controller.next();
               },
-              child: const Text(
-                "Start",
-                style: TextStyle(
+              child: Text(
+                "Start".tr,
+                style: const TextStyle(
                     color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.w700),
@@ -38,17 +38,17 @@ class OnboardingButton extends StatelessWidget {
           );
         } else {
           return Padding(
-            padding: const EdgeInsets.only(
-              left: 20,
-            ),
+            padding: const EdgeInsets.only(left: 20, right: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 TextButton(
-                    onPressed: () {},
-                    child: const Text(
-                      "Skip",
-                      style: TextStyle(
+                    onPressed: () {
+                      controller.skip();
+                    },
+                    child: Text(
+                      "Skip".tr,
+                      style: const TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.w700,
                           fontSize: 18),
@@ -57,7 +57,7 @@ class OnboardingButton extends StatelessWidget {
                   height: 40,
                   width: 110,
                   margin:
-                      const EdgeInsets.symmetric(horizontal: 50, vertical: 0),
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
                   child: MaterialButton(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
@@ -67,9 +67,9 @@ class OnboardingButton extends StatelessWidget {
                     onPressed: () {
                       controller.next();
                     },
-                    child: const Text(
-                      "Next",
-                      style: TextStyle(
+                    child: Text(
+                      "Next".tr,
+                      style: const TextStyle(
                           color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.w700),

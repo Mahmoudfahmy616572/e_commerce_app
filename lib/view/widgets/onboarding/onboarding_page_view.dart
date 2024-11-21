@@ -38,7 +38,7 @@ class OnboardingPageview extends GetView<OnBoardingControllerImp> {
             height: MediaQuery.of(context).size.height * 0.04,
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 40),
+            padding: const EdgeInsets.only(left: 20,right: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -56,7 +56,7 @@ class OnboardingPageview extends GetView<OnBoardingControllerImp> {
                   height: MediaQuery.of(context).size.height * 0.04,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       onboardingModel[index].textBody,
